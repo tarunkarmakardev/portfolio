@@ -1,0 +1,44 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Head -->
+
+  <head>
+    {% include 'includes/head.html' %}
+    <title>{% block title %} {% endblock title %}</title>
+  </head>
+
+  <body class="">
+    <!-- Navbar in header  -->
+    <header>
+      {% block navbar %} {% include 'includes/navbar.html' %} {% endblock navbar%}
+    </header>
+
+    <main id="">
+      {% block content %}
+
+      <!-- Hero -->
+      {% include 'includes/hero.html' %}
+
+      <!-- Skills -->
+      {% include 'includes/skills.html' %}
+
+      <!-- Projects -->
+
+      {% include 'includes/projects.html' %}
+
+      <!-- Download Resume -->
+
+      {% include 'includes/resume.html' %}
+
+      <!-- Contact Form -->
+
+      {% include 'includes/contact.html' %} {% endblock %}
+    </main>
+
+    <footer>{% include 'includes/footer.html' %}</footer>
+
+    {% include 'includes/scripts.html' %}
+  </body>
+</html>

@@ -1,0 +1,19 @@
+{% load static %}
+
+<section id="skills" class="section skills p-4">
+  <div class="section-title d-flex justify-content-center">
+    <h2 class="section-title-text py-3">My Skills</h2>
+  </div>
+
+  <div class="container skills-content my-5">
+    {% for skill in skills %}
+
+    <div class="skills-content-card m-4">
+      {{skill.icon_html | safe}}
+
+      <p>{{skill.skill_name}}</p>
+    </div>
+
+    {% endfor %}
+  </div>
+</section>

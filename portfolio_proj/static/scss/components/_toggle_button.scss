@@ -1,0 +1,47 @@
+@import '../mixins';
+
+.toggle{
+
+    @include display-flex($align-items:center);
+    width: 100%;
+
+    .toggle-switch{
+        margin: 0 0.5rem;
+        position: relative;
+        height:50px;
+        width:80px;
+        @include display-flex($align-items:center);
+    }
+    #{&}-checkbox{
+        opacity: 0;
+        width: 0;
+        height: 0;
+
+        &:checked + .toggle-slider::after{
+            transform: translateX(20px);
+        }
+
+    }
+
+    #{&}-slider{
+        position: absolute;
+        cursor: pointer;
+        height: 30px;
+        width: 50px;
+        background-color: $accent-color;        
+        border-radius: 30px;
+
+        &::after{
+            position: absolute;
+            content: "";
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            background-color: $text-color;
+            top: 5px;
+            left: 5px;
+            transition: all 0.2s ease-in;
+        }
+    }
+
+}

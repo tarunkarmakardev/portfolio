@@ -1,0 +1,21 @@
+.vscode/*
+
+# Local History for Visual Studio Code
+.history/
+
+# Django #
+*.log
+*.pot
+*.pyc
+__pycache__
+db.sqlite3
+
+# Text backup files
+*.bak
+
+# Database
+*.sqlite3
+
+# media
+
+media/

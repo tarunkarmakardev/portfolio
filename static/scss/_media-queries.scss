@@ -1,0 +1,42 @@
+@mixin media($device) {
+    @if($device==sm){
+        @media (max-width: 576px){
+            @content;
+        }
+
+    }
+    @if($device==md){
+        @media (max-width: 768px){
+            @content;
+        }
+
+    }
+    @if($device==lg){
+        @media (max-width: 992px){
+            @content;
+        }
+
+    }
+    @if($device==xl){
+        @media (max-width: 1200px){
+            @content;
+        }
+
+    }
+    @if($device==xxl){
+        @media (max-width: 1400px){
+            @content;
+        }
+
+    }
+
+    @if($device==xs){
+        @media (max-width: 320px){
+            @content;
+        }
+    }
+   
+}
+
+
+

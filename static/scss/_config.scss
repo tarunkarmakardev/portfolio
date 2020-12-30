@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Englebert&family=Titillium+Web:wght@300;700&display=swap');
+
+// CSS reset
+
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+ul, li{
+    list-style: none;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+// Sticky Navbar config
+
+header{
+    position: sticky;
+    top: 0;
+}

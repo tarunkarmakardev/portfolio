@@ -1,0 +1,60 @@
+// Fonts
+$font-weights: ("regular": 400, "medium": 500, "bold": 700);
+$font-logo: 'Englebert', sans-serif;
+$font-primary: 'Titillium Web', sans-serif;
+
+
+
+
+// Dark theme
+
+:root{
+    --primary-color: rgb(34,40,49);
+    --primary-color-rgb: 34,40,49;
+
+    --secondary-color: rgb(57,62,70);
+    --secondary-color-rgb: 57,62,70;
+
+    --accent-color: rgb(255,211,105);
+    --accent-color-rgb: 255,211,105;
+
+
+    --text-color: rgb(238,238,238);
+    --text-color-rgb: 238,238,238;
+
+
+}
+
+
+// Light theme
+
+.light{
+
+    --primary-color: rgb(248,239,212);
+    --primary-color-rgb: 248,239,212;
+
+    --secondary-color: rgb(237,201,136);
+    --secondary-color-rgb: 237,201,136;
+
+    --accent-color: rgb(130,23,82);
+    --accent-color-rgb: 130,23,82;
+
+    --text-color: rgb(222,68,99); 
+    --text-color-rgb: 222,68,99; 
+
+}
+
+
+// SASS variables:
+
+$primary-color: var(--primary-color);
+$primary-color-rgb: var(--primary-color-rgb);
+
+$secondary-color: var(--secondary-color);
+$secondary-color-rgb: var(--secondary-color-rgb);
+
+$accent-color: var(--accent-color);
+$accent-color-rgb: var(--accent-color-rgb);
+
+$text-color: var(--text-color);
+$text-color-rgb: var(--text-color-rgb);

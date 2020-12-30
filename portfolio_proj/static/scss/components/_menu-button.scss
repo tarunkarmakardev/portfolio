@@ -1,0 +1,66 @@
+@import '../animation';
+
+.menu-button{
+        position: relative;
+        height: 50px;
+        width: 50px;
+        background-color: rgba($secondary-color-rgb, 0.4);
+        border: unset;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: unset;
+
+        &:focus{
+            outline: none;
+        }
+
+        #{&}-icon {
+            height: 3.5px;
+            width: 35px;
+            background: $text-color;
+            @include transition(1.2);
+
+            &::after, &::before{
+                position: absolute;
+                content: "";
+                height: 3.5px;
+                width: 40px;
+                background: $text-color;  
+                @include transition(1.2);              
+            }
+
+            &::before{
+                transform: translateY(-12px);
+            }
+            &::after{
+                width: 25px;
+                transform: translateY(12px);
+            }
+        }
+    
+    
+
+}
+
+@mixin menu-button-open {
+    .menu-button{   
+        .menu-button-icon{
+        background: transparent;
+
+            &::before{
+                width: 40px;
+                height: 3.5px;
+                transform: rotate(45deg);
+            }
+
+            &::after{
+                width: 40px;
+                height: 3.5px;
+                transform: rotate(-45deg);
+            }
+
+        }
+       
+    }
+}

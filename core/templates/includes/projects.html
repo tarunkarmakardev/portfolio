@@ -1,0 +1,37 @@
+{% load static %}
+
+<section id="projects" class="section projects p-4">
+  <div class="section-title d-flex justify-content-center">
+    <h2 class="section-title-text py-3">Projects</h2>
+  </div>
+
+  <div class="container projects-content my-5">
+    {% for project in projects %}
+
+    <div class="projects-content-card">
+      <img src="{{project.image.url}}" alt="" />
+
+      <p class="projects-content-card-title">ModernTools PDF editor</p>
+
+      <p class="projects-content-card-des">{{project.description}}</p>
+
+      <a
+        href="{{project.proj_url}}"
+        class="btn btn-accent mt-4"
+        target="_blank"
+      >
+        Visit
+      </a>
+
+      <a
+        href="{{project.github_url}}"
+        class="btn btn-accent mt-4"
+        target="_blank"
+      >
+        Source Code (Github)
+      </a>
+    </div>
+
+    {% endfor %}
+  </div>
+</section>

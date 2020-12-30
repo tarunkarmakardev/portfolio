@@ -1,0 +1,32 @@
+{% extends 'core/base.html' %}
+
+{% block title %}
+
+Tarun Karmakar | Portfolio | Thankyou for submitting
+
+{% endblock title %}
+
+{% block content%}
+
+<section class="section success-message p-4">
+
+
+
+    <div class=" container success-message-content my-5">
+
+        <div class="success-message-content-card m-4">
+
+            <p>Thank you! Your message was sent!</p>
+
+            <a href="{% url 'index' %}" class="btn btn-accent mt-4">
+                &#8592; Go Back
+            </a>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+{% endblock content%}

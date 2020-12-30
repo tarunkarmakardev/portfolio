@@ -1,0 +1,17 @@
+@import '../animation';
+
+@mixin button-accent {
+    .btn-accent{
+        font-size: 1.2rem;
+        background-color: $accent-color;
+        color: $primary-color;
+        border: none;
+        @include button-transition(0.3);
+        &:hover{
+            background-color: rgba($primary-color-rgb, 0.8);
+            border: none;
+            color: $text-color;
+           
+        }
+    }
+}
